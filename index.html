@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Arena — Better answers through structured reasoning</title>
+    <meta
+      name="description"
+      content="AI Arena helps you reach stronger answers by running a structured reasoning workflow across models, resolving inconsistencies, and delivering a clean final response."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI Arena — Better answers through structured reasoning" />
+    <meta
+      property="og:description"
+      content="More reliable answers, less guesswork — with a workflow designed to resolve uncertainty and deliver a clean final response."
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --bg: #070a12;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.72);
+        --border: rgba(255, 255, 255, 0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 800px at 20% 10%, #7c3aed33, transparent),
+          radial-gradient(1200px 800px at 80% 30%, #06b6d433, transparent),
+          var(--bg);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 16px;
+      }
+      .wrap { width: min(1040px, 100%); }
+      header {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 16px; margin-bottom: 18px;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; }
+      .logo {
+        width: 44px; height: 44px; border-radius: 12px;
+        background: linear-gradient(135deg, #7c3aed, #06b6d4);
+        box-shadow: 0 12px 40px rgba(124, 58, 237, 0.22);
+      }
+      .brand b { font-size: 16px; letter-spacing: .2px; }
+      .pill {
+        font-size: 13px; color: var(--muted);
+        border: 1px solid var(--border);
+        padding: 8px 10px; border-radius: 999px;
+        background: rgba(255,255,255,.04);
+        white-space: nowrap;
+      }
+
+      main {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 18px;
+        padding: 28px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      }
+      h1 { margin: 0 0 10px; font-size: clamp(30px, 4.2vw, 48px); line-height: 1.05; }
+      p  { margin: 0 0 16px; color: var(--muted); font-size: 16px; line-height: 1.65; }
+
+      .ctaRow { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0 10px; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 12px 14px; border-radius: 12px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,.06);
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .btnPrimary { background: linear-gradient(135deg, #7c3aed, #06b6d4); border: none; }
+
+      .callout {
+        margin-top: 18px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: rgba(255,255,255,.03);
+        padding: 14px;
+      }
+      .callout b { display:block; margin-bottom: 6px; }
+      .callout span { color: var(--muted); font-size: 14px; line-height: 1.55; display:block; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 14px;
+      }
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px;
+        background: rgba(255,255,255,.03);
+      }
+      .card b { display: block; margin-bottom: 6px; }
+      .card span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+      footer {
+        margin-top: 16px;
+        display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;
+        color: var(--muted); font-size: 13px;
+      }
+      footer a { color: var(--muted); }
+
+      @media (max-width: 760px){
+        header { flex-direction: column; align-items: flex-start; }
+        .grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <b>AI Arena</b>
+        </div>
+        <div class="pill">More reliability • Less guesswork</div>
+      </header>
+
+      <main>
+        <h1>Better answers, fewer dead ends.</h1>
+        <p>
+          AI Arena is built for situations where “one-shot” AI isn’t enough.
+          It uses a structured approach designed to surface uncertainty, resolve inconsistencies,
+          and deliver a clean final response you can actually use.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="https://ai-project-gray-theta.vercel.app" target="_blank" rel="noreferrer">
+            Open AI Arena
+          </a>
+          <a class="btn" href="mailto:rafaelelias6104@gmail.com">Support</a>
+        </div>
+
+        <div class="callout">
+          <b>What’s different</b>
+          <span>
+            Instead of stopping at the first plausible answer, AI Arena pushes toward a higher-confidence result by
+            checking for gaps and contradictions and refining before it finalizes.
+          </span>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <b>More reliable outputs</b>
+            <span>Designed to reduce “confidently wrong” answers and tighten reasoning before you ship it.</span>
+          </div>
+          <div class="card">
+            <b>Live progress</b>
+            <span>See work happening as it’s produced — not a blank screen and a surprise ending.</span>
+          </div>
+          <div class="card">
+            <b>Bring context</b>
+            <span>Use attachments to ground the response in your real materials.</span>
+          </div>
+        </div>
+
+        <footer>
+          <div>© <span id="y"></span> AI Arena</div>
+          <div>
+            <a href="https://ai-project-gray-theta.vercel.app" target="_blank" rel="noreferrer">Launch app</a>
+            •
+            <a href="mailto:rafaelelias6104@gmail.com">Contact support</a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
